@@ -306,6 +306,37 @@ body {
   fill: #000000;
 }
 
+.btn-close:hover {
+  fill: var(--accent-color);
+}
+
+.form-modal {
+  padding: 40px;
+}
+
+.text-form-modal {
+  display: inline-block;
+  margin-top: 0%;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.form-field-modal {
+  margin-bottom: 10px;
+}
+
+.form-label-modal {
+  display: flex;
+  flex-direction: column;
+}
+
 /*---------------Section---------------*/
 
 .section {
