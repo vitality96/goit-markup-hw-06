@@ -281,7 +281,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 
-  width: 520px;
+  width: 528px;
   height: 581px;
 
   background-color: var(--primary-white-color);
@@ -296,7 +296,7 @@ body {
 .btn-close {
   position: absolute;
   top: 8px;
-  left: 482px;
+  left: 490px;
   padding: 0%;
   border: 0;
 
@@ -304,6 +304,8 @@ body {
 
   background-color: var(--primary-white-color);
   fill: #000000;
+
+  transition: fill 250ms var(--timing-function);
 }
 
 .btn-close:hover {
@@ -315,11 +317,9 @@ body {
 }
 
 .text-form-modal {
-  display: inline-block;
-  margin-top: 0%;
+  display: block;
   margin-bottom: 12px;
 
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -328,13 +328,95 @@ body {
   color: var(--title-text-color);
 }
 
-.form-field-modal {
-  margin-bottom: 10px;
-}
-
 .form-label-modal {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  height: 58px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.form-label-modal.textarea {
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.form-input-modal {
+  margin-top: 4px;
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-textarea-modal {
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-textarea-modal::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-checkbox-modal {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-label-checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.link-form-checkbox {
+  color: var(--accent-color);
+}
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-form-modal {
+  padding: 10px 56px;
+  border-radius: 4px;
+  border: none;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.btn-form-modal:hover,
+.btn-form-modal:focus {
+  background-color: #188ce8;
 }
 
 /*---------------Section---------------*/

@@ -351,33 +351,36 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="form-modal">
-                <p class="text-form-modal">Оставьте свои данные, мы вам перезвоним</p>
+                <b class="text-form-modal">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="form-field-modal">
                 <label class="form-label-modal">Имя
-                    <input type="text" name="username">
+                    <input type="text" name="username" class="form-input-modal">
                 </label>
                 </div>
                 <div class="form-field-modal">
                 <label class="form-label-modal">Телефон
-                    <input type="tel" name="phone-number">
+                    <input type="tel" name="phone-number" class="form-input-modal">
                 </label>
                 </div>
                 <div class="form-field-modal">
                 <label class="form-label-modal">Почта
-                    <input type="email" name="email">
+                    <input type="email" name="email" class="form-input-modal">
                 </label>
                 </div>
                 <div class="form-field-modal">
-                <label class="form-label-modal">Комментарий
-                    <textarea name="coments" placeholder="Введите текст"></textarea>
+                <label class="form-label-modal textarea">Комментарий
+                    <textarea name="comments" placeholder="Введите текст" class="form-textarea-modal"></textarea>
                 </label>
                 </div>
-                <label>
-                    <input type="checkbox" name="confirmation">
-                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                <div class="form-checkbox-modal">
+                <label class="form-label-checkbox-text">
+                    <input type="checkbox" name="confirmation" class="">
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="link-form-checkbox">Условия договора</a>
                 </label>
-                
-                <button type="submit">Отправить</button>
+                </div>
+                <div class="btn-form">
+                <button type="submit" class="btn-form-modal">Отправить</button>
+                </div>
             </form>
             <button class="btn-close" data-modal-close>
                 <svg width="30" height="30">
